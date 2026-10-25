@@ -1,0 +1,40 @@
+{
+  "name": "omp-auto-retry",
+  "version": "1.0.0",
+  "description": "Automatic session resume for oh-my-pi (omp) when you hit a usage limit, a quota reset window, or a transient provider failure.",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "omp-auto-retry": "bin/omp-auto-retry.js"
+  },
+  "exports": {
+    ".": "./extension/index.js",
+    "./engine": "./extension/lib/engine.js",
+    "./classify": "./extension/lib/classify.js",
+    "./retry-hint": "./extension/lib/retry-hint.js",
+    "./config": "./extension/lib/config.js"
+  },
+  "files": [
+    "bin/",
+    "extension/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test",
+    "e2e": "node e2e/run.mjs",
+    "lint": "node --check bin/omp-auto-retry.js && node --check extension/index.js && node --check extension/lib/classify.js && node --check extension/lib/config.js && node --check extension/lib/engine.js && node --check extension/lib/logger.js && node --check extension/lib/retry-hint.js"
+  },
+  "keywords": [
+    "omp",
+    "oh-my-pi",
+    "auto-retry",
+    "rate-limit",
+    "usage-limit",
+    "extension",
+    "agent"
+  ]
+}

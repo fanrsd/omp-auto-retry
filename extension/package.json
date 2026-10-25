@@ -1,0 +1,10 @@
+{
+  "name": "omp-auto-retry",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "omp extension: auto-resume a session after a usage limit, quota reset, or transient provider failure.",
+  "omp": {
+    "extensions": ["./index.js"]
+  }
+}
