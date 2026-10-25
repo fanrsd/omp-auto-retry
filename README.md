@@ -1,3 +1,7 @@
+<div align="center">
+  <img src=".github/assets/banner.svg" alt="omp-auto-retry — Auto-resume oh-my-pi sessions after limits or provider failures." width="100%">
+</div>
+
 # omp-auto-retry
 
 Automatic session resume for **oh-my-pi** (`omp`) when you hit a usage limit, a
